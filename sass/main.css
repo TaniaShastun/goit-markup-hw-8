@@ -502,19 +502,19 @@
 }
 
 .benefits-list .icon-vector::before {
-  background-image: url(./images/features/vector.svg);
+  background-image: url(../images/features/vector.svg);
 }
 
 .benefits-list .icon-clock::before {
-  background-image: url(./images/features/clock.svg);
+  background-image: url(../images/features/clock.svg);
 }
 
 .benefits-list .icon-diagram::before {
-  background-image: url(./images/features/diagram.svg);
+  background-image: url(../images/features/diagram.svg);
 }
 
 .benefits-list .icon-astronaut::before {
-  background-image: url(./images/features/astronaut.svg);
+  background-image: url(../images/features/astronaut.svg);
 }
 
 @media screen and (min-width: 320px) {
