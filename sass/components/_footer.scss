@@ -1,0 +1,229 @@
+    .footer{
+      background: #2F303A; 
+      padding-top:60px ;
+      padding-bottom:60px ;
+     
+  
+    .footer-list{
+      text-align: center;
+      
+      &-address-location{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color:$primary-white-color;
+      margin-bottom: 8px;
+      }
+     
+  }
+    .footer-address{
+      margin-bottom: 60px;
+      &-item:not(:last-child){
+      margin-bottom: 8px;
+      }
+      &-link{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      transition-duration: 250ms ;
+      transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+      
+      }
+      &-link:hover,
+      &-link:focus{
+        color:$accent-color;
+      }
+  }
+   
+
+    
+    
+    .footer-sosial{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
+      &-item:not(:last-child){
+        margin-right: 10px;
+        display: inline-block;
+      }
+      &-link{
+        display: flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        transition-property: background-color;
+        transition-duration: 250ms ;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+        &:hover,
+        &:focus{
+          background-color: $accent-color;
+
+        }
+        &-svg{
+          width: 20px;
+          height: 20px;
+          fill: currentColor;
+       }
+        
+      }
+
+    }
+  
+     
+
+    .footer-logo {
+    display: inline-block;
+    font-family:$secondary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-bottom: 20px;
+   }
+   .footers-titles{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:$primary-white-color;
+    margin-bottom: 20px;
+   }
+   .sign-part-wrapp{
+    & input{
+      color: rgba(255, 255, 255, 0.6);
+     }
+   }
+
+  
+     
+   .footer-list-sign-btn{
+    display:flex;
+    margin: auto;
+    align-items:center ;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background: $accent-color;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;  
+    border-color: transparent;
+
+    &:focus{
+      cursor: pointer;
+    
+     }
+   }
+    .footers-titles-sign{
+    text-transform: initial;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87px;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    margin-right: 10px;
+    
+   }
+    .sign-up-input{
+    display: flex;
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    background-color: transparent;
+    padding-left: 16px;
+    margin-bottom: 20px;
+
+    &:focus{
+      cursor: pointer;
+     }
+    
+   }
+    .footer-list-sign-svg{
+    display: flex;
+    
+   }
+  
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+       .container{
+        padding-left: 89px;
+        padding-right: 76px;
+    }
+     
+     .footer-list{
+         display: flex;
+         justify-content: space-between;
+         text-align: center;
+         flex-wrap: wrap;
+         &-address-part{
+             margin-right: 165px;
+         }
+         &-sign-part{
+           padding-left: 76px;
+           padding-right: 76px;
+         }
+ }
+    
+   }
+   @media screen and (min-width: 1200px) {
+    .footer-list{
+        display: flex;
+        flex-wrap: wrap;
+         text-align: start;
+         &-address-part{
+          margin-right: 80px;
+          
+      }
+      &-address-location{
+        margin-bottom: 9px;
+      }
+      &-sosial-part{
+          margin-right: 93px;
+      }
+      &-contacts{
+        display: block;
+        margin-right: 70px;
+      }
+      &-sign-btn{
+      display: flex;
+      margin: 0;
+
+  }
+    }
+     .sign-up-input{
+         width: 358px;
+     }
+     
+        
+     .footer-address{
+       margin-bottom: 9px;
+     }
+     .sign-part-wrapp{
+         display: flex;
+        }
+     .footers-titles{
+         display: flex;
+     }
+     .footer-list-sign-svg{
+      display: flex;
+ 
+     }
+     .footer-logo {
+      font-size: 26px;
+      line-height: 1.192;
+     }
+ }
+}
+  

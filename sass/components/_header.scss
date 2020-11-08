@@ -1,0 +1,243 @@
+.header{
+  border-bottom: 1px solid #ECECEC; 
+}
+.container-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;   
+}
+
+@media screen and ( min-width:480px) and (max-width:767px){
+ 
+  .container-header{
+    height: 60px; 
+  }
+  .nav-mobile{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    margin-right:270px;
+  }
+  .menu-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    object-fit: contain;
+    
+
+    .icon-close{
+      display: none;
+      vertical-align: middle;
+      
+    }
+    &.is-open .icon-close{
+      display: block;
+    }
+    &:hover,
+    &:focus{
+      color: $accent-color;
+    }
+    &-svg{
+       fill: currentColor;
+     }
+    
+    &.is-open .icon-menu{
+      display: none;
+    }
+  }
+  
+  .menu-container{
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:$primary-white-color;
+    padding: 60px 0;
+    width: 100%;
+    height: 393px;
+
+    &.is-open{
+      opacity: 1;  
+      transition-duration: 250ms ;
+      transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);    
+    }
+    .nav-menu{
+      display: block; 
+      text-align: center;
+
+    }
+    .navigation-list{
+     margin-bottom: 60px;
+
+     &-item:not(:last-child){
+      margin-bottom: 40px;
+     }
+     
+    }
+    .address-list{ 
+      &-item:not(:last-child){
+        margin-bottom: 16px;
+       }
+       &-link{
+        font-size: 18px;
+        line-height:1.16;
+       }
+    }
+
+  }
+  
+}
+
+
+.header-navigation{
+  display: flex;
+}
+.navigation-list{
+  display: block;
+  &-link{
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition-duration: 250ms ;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+
+  &:hover,
+  &:focus{
+    color:$accent-color; 
+    cursor: pointer;
+    }
+  &.studio::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px ;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color:$accent-color;
+  }
+ }    
+}
+
+.address-list{
+  display: block; 
+  &-item{
+    text-align: center;
+  }
+  &-link{
+      font-style: normal;
+      display: block;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color:$page-secondary-color;
+      
+      transition-duration: 250ms ;
+      transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+
+      &:hover,
+      &:focus{
+      color:$accent-color;
+      color:$accent-color;
+      cursor: pointer;
+      }
+      
+      }
+  &-link-icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }   
+  }
+  
+  .logo{
+    font-family:$secondary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16px;
+    letter-spacing: 0.03em;
+    color: #000000;
+  
+
+    &-web{
+      color:$accent-color; 
+    }
+    &-studio{
+      color:$primary-white-color;
+    }
+   
+  }
+  @media screen and(min-width:768px) {
+    .menu-button{
+      display: none;
+    }
+    .menu-container{
+      display: flex;
+    }
+    .container-logo{
+      display: flex;
+      align-self: center;
+    }
+    .navigation-list{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-item:not(:last-child){
+          margin-right: 50px;
+          }
+      &-link{
+      padding-bottom: 24px;
+      font-size: 14px;
+      line-height: 1.16;
+      }
+      &.studio::after{
+        bottom: 0 ;
+      }
+    }
+    .address-list{
+      display: flex; 
+      flex-wrap: wrap;
+      margin-left: 84px;
+     
+      &-item:not(:last-child){
+        margin-bottom: 10px;
+       }
+      &-link{
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+        line-height:1.16;
+       }
+    }
+    .logo{
+      margin-right:88px;
+    }
+
+  }
+
+@media screen and(min-width:1200px) {
+  
+  .address-list{
+    margin-left: 305px;
+    &-link{
+      font-size: 14px;
+      line-height: 1.143;
+      padding-top: 38px;
+      padding-bottom: 25px;
+    }
+    &-item:not(:last-child){
+      margin-right: 30px;
+     }
+  }
+  .logo{
+    margin-right:93px;
+    font-size: 26px;
+    line-height: 1.192;
+  }
+}
+  
